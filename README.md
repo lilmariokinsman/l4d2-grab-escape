@@ -33,8 +33,8 @@ plugin follows the game's difficulty (`z_difficulty`) live.
 |---|---|---|
 | `grab_escape_enable` | 1 | turn the mod on/off |
 | `grab_escape_key` | use | key to mash: `use` (E), `jump` (SPACE), `attack` (LMB), `attack2` (RMB), `reload` (R), `duck` (CTRL) |
-| `grab_escape_presses_easy` / `_normal` / `_hard` / `_expert` | 10 / 18 / 35 / 50 | presses needed to fill the bar on each difficulty |
-| `grab_escape_decay_easy` / `_normal` / `_hard` / `_expert` | 2.0 / 3.5 / 7.0 / 9.0 | presses the bar loses per second when you stop mashing |
+| `grab_escape_presses_easy` / `_normal` / `_hard` / `_expert` | 10 / 18 / 30 / 42 | presses needed to fill the bar on each difficulty |
+| `grab_escape_decay_easy` / `_normal` / `_hard` / `_expert` | 2.0 / 3.5 / 6.0 / 8.0 | presses the bar loses per second when you stop mashing |
 | `grab_escape_bots` | 0 | 1 = survivor bots break free on their own too |
 | `grab_escape_kill_fallback` | 1 | 1 = kill the special infected if the stagger doesn't free you |
 

@@ -71,3 +71,4 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
 - Feel-test (user, 13:1x): 8/12/20/30 "too easy"; 15/25/35/50 with drain 3/5/7/9 "better, but pretty difficult for low
   difficulty" -> CHOSEN easy 10 (drain 2.0), normal 18 (3.5), hard 35 (7.0), expert 50 (9.0). Set in plugin defaults,
   the game's cfg/sourcemod/grab_escape.cfg and live. Awaiting the user's next feel-test.
+- User: harder ones a little easier too -> hard 30 (drain 6.0), expert 42 (8.0). CHOSEN, live + cfg + defaults.

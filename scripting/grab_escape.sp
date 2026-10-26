@@ -31,8 +31,8 @@ static const char g_PinProps[][] = { "m_tongueOwner", "m_pounceAttacker", "m_joc
 
 // Per difficulty (z_difficulty Easy, Normal, Hard, Impossible = Expert): presses to fill the bar, drain per second
 static const char g_DiffNames[][] = { "easy", "normal", "hard", "expert" };
-static const char g_DefPresses[][] = { "10", "18", "35", "50" };
-static const char g_DefDecay[][] = { "2.0", "3.5", "7.0", "9.0" };
+static const char g_DefPresses[][] = { "10", "18", "30", "42" };
+static const char g_DefDecay[][] = { "2.0", "3.5", "6.0", "8.0" };
 
 ConVar g_cvEnable, g_cvKey, g_cvBots, g_cvKillFallback, g_cvDifficulty;
 ConVar g_cvPresses[4], g_cvDecay[4];
