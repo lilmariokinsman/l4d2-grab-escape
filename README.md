@@ -2,7 +2,7 @@
 
 When a special infected pins you (hunter pounce, smoker tongue, jockey ride, charger pummel or carry), a big red bar
 appears at the bottom of the screen. Mash the key shown on it to fill the bar; when it's full the special infected
-is staggered and lets go. If the stagger doesn't free you, the special infected is killed instead (can be turned off).
+is staggered and lets go. The harder the difficulty, the more presses it takes and the faster the bar drains. If the stagger doesn't free you, the special infected is killed instead (can be turned off).
 
 ## Requirements
 - Left 4 Dead 2 (Steam, current version 2.2.4.x)
@@ -26,16 +26,20 @@ Copy the `left4dead2` folder from this zip into
 Restart the game (the vpk is only read at startup).
 
 ## Settings
-Written to `left4dead2/cfg/sourcemod/grab_escape.cfg` on first run. Change them there or in the console.
+Written to `left4dead2/cfg/sourcemod/grab_escape.cfg` on first run. Change them there or in the console. The
+plugin follows the game's difficulty (`z_difficulty`) live.
 
 | Cvar | Default | Meaning |
 |---|---|---|
 | `grab_escape_enable` | 1 | turn the mod on/off |
 | `grab_escape_key` | use | key to mash: `use` (E), `jump` (SPACE), `attack` (LMB), `attack2` (RMB), `reload` (R), `duck` (CTRL) |
-| `grab_escape_presses` | 12 | presses needed to fill the bar |
-| `grab_escape_decay` | 1.0 | presses the bar loses per second when you stop mashing |
+| `grab_escape_presses_easy` / `_normal` / `_hard` / `_expert` | 8 / 12 / 20 / 30 | presses needed to fill the bar on each difficulty |
+| `grab_escape_decay_easy` / `_normal` / `_hard` / `_expert` | 1.0 / 2.0 / 3.5 / 5.0 | presses the bar loses per second when you stop mashing |
 | `grab_escape_bots` | 0 | 1 = survivor bots break free on their own too |
 | `grab_escape_kill_fallback` | 1 | 1 = kill the special infected if the stagger doesn't free you |
+
+Charger: the carry and the slam count as part of the same grab. If the bar fills before the pummel starts, it stays
+full and frees you the moment the pummel begins (a stagger during the carry or slam doesn't stop the pummel).
 
 The bar shows the key letter from the default binds; if you've rebound, set `grab_escape_key` to the action, not the
 letter.

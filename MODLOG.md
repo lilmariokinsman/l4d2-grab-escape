@@ -51,3 +51,20 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
 - `um publish check`: 2 FAILs are false positives (the release files equal the installed copies of this same mod);
   vpk listing = addoninfo.txt + materials/grab_escape/bar_* only. Project put under git (build/, release/, .venv ignored).
 - Still open: user feel-test (presses/decay), charger CARRY test, then delete ge_lab.smx from the game's plugins folder.
+
+## v1.2.0 charger carry + difficulty (2026-10-26 12:4x-13:02)
+- Measured (ge_lab carry watcher): carry lasts 0.09-0.56 s, then a slam with NO pin netprop set, pummel starts
+  0.77-0.89 s after carry start. server.dll only has m_carryAttacker/Victim, m_pummelAttacker/Victim (no queued prop).
+- Old bug: fill reset + bar flicker in that gap; and the 0.25 s "freed" check was fooled by the gap.
+- Fix: grace CARRY_GRACE 1.5 s keeps the same charger as pinner after a carry. VERIFIED test A (12 presses at 10/s from
+  carry start): released 1.20 s after carry start, pummel started 1.03 s -> no presses lost.
+- Measured: a Stagger during the slam does NOT stop the pummel (release at 342.93, pummel began anyway 0.56 s later).
+  So a charger bar that fills before the pummel is held full (no drain) and fires at pummel start. VERIFIED: carry start
+  193.20, pummel start ~194.09, release 194.10, pummel ended 0.04 s later, "stagger freed".
+- Difficulty (user request): grab_escape_presses_/decay_<easy|normal|hard|expert>, defaults 8/12/20/30 and
+  1.0/2.0/3.5/5.0, read from z_difficulty every tick. Old grab_escape_presses/decay removed; cfg regenerated (old cfg
+  backed up in the session scratchpad). VERIFIED cvars live in game.
+- Lab: ge_lab got ge_autofree/ge_mash/ge_turn, ge_bring <si> <surv> [dist] (extinguish + 600 hp). z_spawn chargers went
+  passive with dlp_parkour loaded and attacked once it was unloaded (1 sample each) -> noted in dl-parkour MODLOG.
+- User came back mid-test and found the bar full after 3 clicks = my test setting presses 2. Restored.
+- Open: user feel-test of the difficulty numbers; delete ge_lab.smx from plugins before release; rebuild zip (package.sh).
