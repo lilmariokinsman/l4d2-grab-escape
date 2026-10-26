@@ -51,3 +51,6 @@ Log: `addons/sourcemod/logs/grab_escape.log`.
 - Made by mariokinsmanjr with Claude (Anthropic) writing the code and textures: built with AI.
 - Uses SourceMod / MetaMod:Source and L4D2's own VScript `Stagger`. Bar lettering uses the Impact font rendered to
   textures. No game files are included.
+
+## License
+GPL-3.0 (see `LICENSE`), copyright 2026 mariokinsmanjr. SourceMod plugins are linked against SourceMod, which is GPL-3.0.
