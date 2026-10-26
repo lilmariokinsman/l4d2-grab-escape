@@ -72,3 +72,10 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
   difficulty" -> CHOSEN easy 10 (drain 2.0), normal 18 (3.5), hard 35 (7.0), expert 50 (9.0). Set in plugin defaults,
   the game's cfg/sourcemod/grab_escape.cfg and live. Awaiting the user's next feel-test.
 - User: harder ones a little easier too -> hard 30 (drain 6.0), expert 42 (8.0). CHOSEN, live + cfg + defaults.
+- User: "sweet that's better" -> difficulty numbers final (10/18/30/42, drain 2/3.5/6/8).
+
+## Release 1.2.0 (2026-10-26 13:05)
+- ge_lab.smx unloaded and deleted from the game's plugins folder (copy stays in build/; source in scripting/).
+- release/grab_escape-1.2.0.zip built by package.sh. `um publish check`: same 2 false-positive FAILs as 1.1.0 (the files
+  equal the installed copies of this mod); vpk = addoninfo + materials/grab_escape/bar_* only.
+- Not done: uploading anywhere (ask the user where: Nexus / GitHub / Steam Workshop needs a different packaging).
