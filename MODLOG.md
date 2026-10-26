@@ -68,3 +68,6 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
   passive with dlp_parkour loaded and attacked once it was unloaded (1 sample each) -> noted in dl-parkour MODLOG.
 - User came back mid-test and found the bar full after 3 clicks = my test setting presses 2. Restored.
 - Open: user feel-test of the difficulty numbers; delete ge_lab.smx from plugins before release; rebuild zip (package.sh).
+- Feel-test (user, 13:1x): 8/12/20/30 "too easy"; 15/25/35/50 with drain 3/5/7/9 "better, but pretty difficult for low
+  difficulty" -> CHOSEN easy 10 (drain 2.0), normal 18 (3.5), hard 35 (7.0), expert 50 (9.0). Set in plugin defaults,
+  the game's cfg/sourcemod/grab_escape.cfg and live. Awaiting the user's next feel-test.
