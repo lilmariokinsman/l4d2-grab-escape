@@ -3,3 +3,4 @@ release/
 .venv/
 *.smx
 *.vpk
+_private/

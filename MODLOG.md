@@ -80,3 +80,4 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
   equal the installed copies of this mod); vpk = addoninfo + materials/grab_escape/bar_* only.
 - Not done: uploading anywhere (ask the user where: Nexus / GitHub / Steam Workshop needs a different packaging).
 - 2026-10-26: published https://github.com/lilmariokinsman/l4d2-grab-escape (public), release v1.2.0 with the zip. Commits rewritten to the GitHub no-reply email before pushing. No LICENSE file yet.
+- 2026-10-26 13:2x-13:35: showcase _private/caps/grab_escape_showcase.mp4 (38.5 s, 1080p, game audio; Hunter/Jockey/Smoker take1, Charger take2; edl.json). dlp_parkour disabled for the takes (passive chargers), restored after; ge_lab redeployed for takes, removed again. Survivor died after the Charger take (2nd charge, off camera).
