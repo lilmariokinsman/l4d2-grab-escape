@@ -79,3 +79,4 @@ use spcomp64.exe). No other dependency (no left4dhooks). Build: `sh build.sh` (c
 - release/grab_escape-1.2.0.zip built by package.sh. `um publish check`: same 2 false-positive FAILs as 1.1.0 (the files
   equal the installed copies of this mod); vpk = addoninfo + materials/grab_escape/bar_* only.
 - Not done: uploading anywhere (ask the user where: Nexus / GitHub / Steam Workshop needs a different packaging).
+- 2026-10-26: published https://github.com/lilmariokinsman/l4d2-grab-escape (public), release v1.2.0 with the zip. Commits rewritten to the GitHub no-reply email before pushing. No LICENSE file yet.
